@@ -1,0 +1,26 @@
+{
+  "name": "com.dragomir.fusion",
+  "version": "1.0.0",
+  "description": "Website inspired by TemplateOcean design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragomirurdov/Fusion.git"
+  },
+  "author": "Dragomir Urdov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragomirurdov/Fusion/issues"
+  },
+  "homepage": "https://github.com/dragomirurdov/Fusion#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.1.0"
+  }
+}
