@@ -1,5 +1,25 @@
-body {
+@import "abstract/variable";
+@import "abstract/animation";
+@import "abstract/mixin";
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    color: var(--text-color);
 }
+
+ul,
+ol {
+    list-style: none;
+}
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/service";
+@import "layout/project";
+@import "layout/testilmonials";
+@import "layout/team";
+@import "layout/contact";
+@import "layout/footer";

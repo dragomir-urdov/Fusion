@@ -1,0 +1,89 @@
+.header {
+    &__content {
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background: linear-gradient(
+                rgba(23, 23, 23, 0.7),
+                rgba(23, 23, 23, 0.7)
+            ),
+            url(../img/background.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__wrapper {
+        border: var(--border);
+        width: 70%;
+
+        @media (min-width: 750px) {
+            width: 60%;
+        }
+
+        &--heading {
+            font-family: "Merriweather", serif;
+            text-align: center;
+            font-weight: 300;
+            font-size: 2rem;
+            line-height: 3rem;
+            padding: 1rem;
+
+            transition: all 0.5s ease;
+
+            @media (min-width: 750px) {
+                font-size: 3.5rem;
+                line-height: 5.6rem;
+                padding: 2rem;
+            }
+            &--span {
+                color: var(--primary-color-yellow);
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 1rem;
+
+        margin: 2rem 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.8rem;
+
+        &--item {
+            background: linear-gradient(
+                to right,
+                var(--secondary-color-yellow) 50%,
+                var(--text-color) 50%
+            );
+            background-size: 15rem 15rem;
+            background-repeat: no-repeat;
+            background-position-x: -10rem;
+            background-clip: text;
+            color: transparent;
+
+            transition: all 1s linear;
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                background-position-x: 0rem;
+            }
+
+            &:not(:last-child) {
+                border-right: 1px solid var(--primary-color-yellow);
+                padding-right: 1rem;
+            }
+        }
+    }
+    &__arrow {
+        font-size: 1.2rem;
+        color: var(--primary-color-yellow);
+
+        animation: header__arrow 2s linear infinite backwards;
+        cursor: pointer;
+    }
+}
