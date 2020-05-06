@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
         <title>Fusion</title>
         <!-- STYLE -->
         <link rel="stylesheet" href="css/style.css" />
@@ -29,17 +30,56 @@
                     <li class="header__list--item">STRATEGY</li>
                     <li class="header__list--item">BRANDING</li>
                 </ul>
-                <i class="fas fa-chevron-down header__arrow"></i>
+                <a href="#main" class="header__link">
+                    <i class="fas fa-chevron-down header__arrow"></i>
+                </a>
             </div>
+            <nav class="navigation header__navigation">
+                <a href="#">
+                    <img
+                        src="img/logo.png"
+                        alt="Logo"
+                        class="navigation__logo"
+                    />
+                </a>
+                <a href="#contact" class="navigation__contact">
+                    Get in teach
+                    <span class="navigation__contact--array">&rarr;</span>
+                </a>
+            </nav>
         </header>
-        <nav class="navigation">
-            <img src="img/logo.png" alt="" class="navigation__logo" />
-            <p class="navigation__contact">
+        <nav class="navigation navigation__sticky">
+            <a href="#">
+                <img src="img/logo.png" alt="Logo" class="navigation__logo" />
+            </a>
+            <!-- checkbox -->
+            <input type="checkbox" id="navigation__checkbox" />
+            <label for="navigation__checkbox" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__menu">
+                <ul class="navigation__list">
+                    <li class="navigation__list--item">
+                        <a href="#">SERVICES</a>
+                    </li>
+                    <li class="navigation__list--item">
+                        <a href="#">PORTFOLIO</a>
+                    </li>
+                    <li class="navigation__list--item">
+                        <a href="#">TESTIMONIALS</a>
+                    </li>
+                    <li class="navigation__list--item"><a href="#">TEAM</a></li>
+                    <li class="navigation__list--item">
+                        <a href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#contact" class="navigation__contact">
                 Get in teach
-                <span class="navigation__content--array">&rarr;</span>
-            </p>
+                <span class="navigation__contact--array">&rarr;</span>
+            </a>
         </nav>
-        <main class="main">
+        <main id="main" class="main">
             <section class="service"></section>
             <section class="project"></section>
             <section class="testimonials"></section>

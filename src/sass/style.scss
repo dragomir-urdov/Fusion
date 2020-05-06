@@ -10,9 +10,26 @@
     color: var(--text-color);
 }
 
+html {
+    scroll-snap-type: y mandatory;
+    .main,
+    .header {
+        scroll-snap-align: start;
+    }
+    scrollbar-color: black var(--background);
+}
+
+body {
+    background-color: var(--background);
+}
+
 ul,
 ol {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 @import "layout/header";

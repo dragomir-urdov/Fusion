@@ -1,0 +1,19 @@
+@mixin background__navigation {
+    background: linear-gradient(
+        to right,
+        var(--secondary-color-yellow) 50%,
+        var(--text-color) 50%
+    );
+    background-size: 20rem 20rem;
+    background-repeat: no-repeat;
+    background-position-x: -11rem;
+    background-clip: text;
+    color: transparent;
+
+    transition: all 1s linear;
+
+    &:hover,
+    &:active {
+        background-position-x: 0rem;
+    }
+}

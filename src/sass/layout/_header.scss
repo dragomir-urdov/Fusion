@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+
     &__content {
         height: 100vh;
 
@@ -47,31 +49,15 @@
 
     &__list {
         display: flex;
-        gap: 1rem;
 
         margin: 2rem 0;
         font-family: "Open Sans", sans-serif;
         font-size: 0.8rem;
 
         &--item {
-            background: linear-gradient(
-                to right,
-                var(--secondary-color-yellow) 50%,
-                var(--text-color) 50%
-            );
-            background-size: 15rem 15rem;
-            background-repeat: no-repeat;
-            background-position-x: -10rem;
-            background-clip: text;
-            color: transparent;
-
-            transition: all 1s linear;
+            @include background__navigation;
             cursor: pointer;
-
-            &:hover,
-            &:active {
-                background-position-x: 0rem;
-            }
+            margin-left: 1rem;
 
             &:not(:last-child) {
                 border-right: 1px solid var(--primary-color-yellow);
@@ -79,11 +65,30 @@
             }
         }
     }
+
+    &__link {
+        height: 4rem;
+    }
+
     &__arrow {
         font-size: 1.2rem;
         color: var(--primary-color-yellow);
 
         animation: header__arrow 2s linear infinite backwards;
         cursor: pointer;
+    }
+
+    &__navigation {
+        position: absolute;
+        bottom: 0;
+        padding: 2rem;
+
+        @media (max-width: 400px) {
+            opacity: 0;
+        }
+
+        @media (min-width: 750px) {
+            padding: 2rem 6rem;
+        }
     }
 }
