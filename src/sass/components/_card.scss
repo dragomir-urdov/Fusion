@@ -1,0 +1,32 @@
+.service__card {
+    max-width: 15rem;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.1rem;
+
+    &--icon {
+        color: var(--primary-color-yellow);
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    &--title {
+        margin: 1rem 0;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    &--text {
+        color: var(--text-color-dark);
+        line-height: 1.5;
+    }
+
+    &--button {
+        background-color: transparent;
+        border: none;
+        margin: 1rem 0;
+        text-transform: uppercase;
+
+        @include button-background-hover;
+        cursor: pointer;
+    }
+}

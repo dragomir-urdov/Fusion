@@ -1,8 +1,8 @@
-@mixin background__navigation {
+@mixin button-background-hover {
     background: linear-gradient(
         to right,
         var(--secondary-color-yellow) 50%,
-        var(--text-color) 50%
+        var(--text-color-light) 50%
     );
     background-size: 20rem 20rem;
     background-repeat: no-repeat;

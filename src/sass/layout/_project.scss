@@ -1,0 +1,64 @@
+.project {
+    &__one {
+        background: url(../img/project-1.jpg);
+    }
+
+    &__two {
+        background: url(../img/project-2.jpg);
+    }
+
+    &__three {
+        background: url(../img/project-3.jpg);
+    }
+
+    &__one,
+    &__two,
+    &__three {
+        position: relative;
+        height: 70vh;
+        margin: 6rem;
+        background-position: center;
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+
+    &__wrapper {
+        &--left {
+            position: absolute;
+            left: 1rem;
+            top: 0;
+        }
+
+        &--right {
+            position: absolute;
+            bottom: 0;
+            right: 1rem;
+            width: 15%;
+        }
+    }
+
+    &__subtitle {
+        font-family: "Open Sans", sans-serif;
+        color: var(--primary-color-yellow);
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+
+    &__title {
+        font-family: "Merriweather", serif;
+        font-size: 3rem;
+    }
+
+    &__detail,
+    &__view {
+        display: block;
+        border: none;
+        margin: 1rem 0;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        @include button-background-hover;
+    }
+}

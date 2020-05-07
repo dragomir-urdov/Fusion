@@ -7,6 +7,7 @@
     &__sticky {
         position: sticky;
         top: 0;
+        z-index: 100;
         background-color: var(--navigation-color);
 
         padding: 1rem 2rem;
@@ -24,7 +25,7 @@
         font-size: 0.75rem;
         cursor: pointer;
 
-        @include background__navigation;
+        @include button-background-hover;
         &--array {
             margin: 0 0.5rem;
             color: var(--primary-color-yellow);
@@ -36,6 +37,7 @@
         height: 2.5rem;
         display: flex;
         align-items: center;
+        transform: translateX(2.4rem);
     }
 
     &__menu {
@@ -44,11 +46,6 @@
         top: 4.5rem;
         left: 0;
 
-        @media (min-width: 1000px) {
-            left: -3rem;
-        }
-
-        z-index: -10;
         opacity: 0;
         transform: translateY(-4rem);
         transition: all 0.5s ease;
@@ -77,7 +74,7 @@
             flex-grow: 1;
 
             & > a {
-                @include background__navigation;
+                @include button-background-hover;
             }
         }
     }

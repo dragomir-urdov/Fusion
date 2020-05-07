@@ -55,7 +55,7 @@
         font-size: 0.8rem;
 
         &--item {
-            @include background__navigation;
+            @include button-background-hover;
             cursor: pointer;
             margin-left: 1rem;
 
@@ -84,6 +84,10 @@
         padding: 2rem;
 
         @media (max-width: 400px) {
+            opacity: 0;
+        }
+
+        @supports not (scroll-snap-align: start) {
             opacity: 0;
         }
 

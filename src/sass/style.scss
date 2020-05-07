@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
 
-    color: var(--text-color);
+    color: var(--text-color-light);
 }
 
 html {
@@ -16,7 +16,7 @@ html {
     .header {
         scroll-snap-align: start;
     }
-    scrollbar-color: black var(--background);
+    scrollbar-color: var(--background) black;
 }
 
 body {
@@ -31,6 +31,9 @@ ol {
 a {
     text-decoration: none;
 }
+
+@import "components/card";
+@import "components/line";
 
 @import "layout/header";
 @import "layout/navigation";
