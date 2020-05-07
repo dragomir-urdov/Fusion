@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    .header,
+    .main {
+        scroll-snap-align: start;
+    }
+    scrollbar-color: var(--background) black;
+}
+
+.scroll {
+    // scroll-behavior: smooth;
+    // scroll-snap-type: y mandatory;
+
+    &__item {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        // scroll-snap-align: start;
+    }
+}

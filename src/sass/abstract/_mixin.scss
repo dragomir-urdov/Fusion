@@ -10,6 +10,11 @@
     background-clip: text;
     color: transparent;
 
+    @supports not (background-clip: text) {
+        color: var(--text-color-light);
+        background: transparent;
+    }
+
     transition: all 1s linear;
 
     &:hover,

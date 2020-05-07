@@ -18,13 +18,13 @@
     &--text {
         color: var(--text-color-dark);
         line-height: 1.5;
+        margin: 1rem 0;
     }
 
     &--button {
-        background-color: transparent;
         border: none;
-        margin: 1rem 0;
         text-transform: uppercase;
+        font-size: 0.8rem;
 
         @include button-background-hover;
         cursor: pointer;

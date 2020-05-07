@@ -1,39 +1,68 @@
 .project {
-    &__one {
-        background: url(../img/project-1.jpg);
-    }
-
-    &__two {
-        background: url(../img/project-2.jpg);
-    }
-
-    &__three {
-        background: url(../img/project-3.jpg);
-    }
+    background-color: var(--navigation-color);
+    // padding: 3rem 0;
 
     &__one,
     &__two,
     &__three {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        height: 70vh;
-        margin: 6rem;
-        background-position: center;
-        background-size: 60%;
-        background-repeat: no-repeat;
+        margin: 1rem;
+        text-shadow: 0.5rem 0.5rem 1rem black;
+
+        transition: all 0.5s ease;
+
+        @media (min-width: 400px) {
+            background-size: 90%;
+        }
+
+        @media (min-width: 800px) {
+            background-size: 70%;
+            margin: 0 6rem;
+        }
+    }
+
+    &__image {
+        width: 80%;
+        filter: brightness(80%);
+        @media (min-width: 1040px) {
+            width: 60%;
+        }
     }
 
     &__wrapper {
         &--left {
+            z-index: 1;
+            display: grid;
+            grid-template-rows: repeat(3, min-content);
             position: absolute;
-            left: 1rem;
-            top: 0;
+            left: 0;
+            top: 1.5rem;
+
+            transition: all 0.5s ease;
+
+            @media (min-width: 700px) {
+                top: 0;
+            }
         }
 
         &--right {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
             position: absolute;
-            bottom: 0;
-            right: 1rem;
-            width: 15%;
+            bottom: 3.5rem;
+            right: 0;
+
+            @media (min-width: 700px) {
+                bottom: 0;
+            }
+
+            .line {
+                align-self: end;
+            }
         }
     }
 

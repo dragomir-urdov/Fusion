@@ -10,15 +10,6 @@
     color: var(--text-color-light);
 }
 
-html {
-    scroll-snap-type: y mandatory;
-    .main,
-    .header {
-        scroll-snap-align: start;
-    }
-    scrollbar-color: var(--background) black;
-}
-
 body {
     background-color: var(--background);
 }
@@ -32,6 +23,7 @@ a {
     text-decoration: none;
 }
 
+@import "components/scroll";
 @import "components/card";
 @import "components/line";
 
