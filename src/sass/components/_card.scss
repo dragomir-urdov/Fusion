@@ -30,3 +30,63 @@
         cursor: pointer;
     }
 }
+
+.testimonials__card {
+    width: 100vw;
+    @media (min-width: 700px) {
+        width: 60vw;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--navigation-color);
+    padding: 0 2rem;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+
+    &--image {
+        margin: 0 2rem;
+    }
+    &--text {
+        width: 90%;
+        text-align: center;
+        padding: 2rem 0;
+        line-height: 2rem;
+    }
+
+    &--name {
+        padding: 2rem 0 1rem;
+        text-transform: uppercase;
+        color: var(--primary-color-yellow);
+        font-size: 0.9rem;
+
+        position: relative;
+        &::before {
+            content: "";
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            top: 2.5rem;
+            right: 1rem;
+            transform: translateX(-100%);
+            background-color: #fff;
+        }
+        &::after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            top: 2.5rem;
+            left: 1rem;
+            transform: translateX(100%);
+            background-color: #fff;
+        }
+    }
+
+    &--job {
+        padding: 1rem 0 2rem;
+        font-size: 0.7rem;
+    }
+}

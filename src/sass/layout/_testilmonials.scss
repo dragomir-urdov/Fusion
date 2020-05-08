@@ -1,3 +1,95 @@
 .testimonials {
-    height: 300vh;
+    padding: 4 1rem;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 750px) {
+        padding: 4rem;
+    }
+
+    &__name {
+        color: var(--primary-color-yellow);
+        text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
+        margin: 1.5rem;
+    }
+
+    &__title {
+        font-family: "Merriweather", serif;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 4rem;
+
+        @media (min-width: 750px) {
+            width: 75%;
+            font-size: 2.75rem;
+            line-height: 5rem;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        margin: 3rem 0;
+        padding: 3rem 0;
+
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 750px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        &--item {
+            margin: 1rem 0;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        align-items: center;
+        width: 100vw;
+        @media (min-width: 700px) {
+            width: 60vw;
+        }
+        &--cards {
+            width: 100vw;
+            @media (min-width: 700px) {
+                width: 60vw;
+            }
+
+            scrollbar-color: var(--navigation-color) var(--navigation-color);
+            overflow-x: scroll;
+            display: flex;
+
+            scroll-snap-type: x mandatory;
+        }
+
+        &--position {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 2rem;
+            width: 100vw;
+            @media (min-width: 700px) {
+                width: 60vw;
+            }
+            .position {
+                display: block;
+                height: 0.25rem;
+                margin: 0 1rem;
+                width: 15%;
+                background-color: var(--primary-color-yellow);
+            }
+        }
+    }
 }
