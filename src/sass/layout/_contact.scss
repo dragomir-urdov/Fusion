@@ -1,3 +1,37 @@
 .contact {
-    height: 100vh;
+    background: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)),
+        url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+
+    min-height: 100vh;
+    padding: 4rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 750px) {
+        padding: 4rem;
+    }
+
+    &__name {
+        color: var(--primary-color-yellow);
+        text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
+        margin: 1.5rem;
+    }
+
+    &__title {
+        font-family: "Merriweather", serif;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 4rem;
+
+        @media (min-width: 750px) {
+            width: 75%;
+            font-size: 2.75rem;
+            line-height: 5rem;
+        }
+    }
 }

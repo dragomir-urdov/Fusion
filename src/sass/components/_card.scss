@@ -35,6 +35,7 @@
     width: 100vw;
     @media (min-width: 700px) {
         width: 60vw;
+        max-width: 700px;
     }
     display: flex;
     flex-direction: column;
@@ -88,5 +89,139 @@
     &--job {
         padding: 1rem 0 2rem;
         font-size: 0.7rem;
+    }
+}
+
+.team__card {
+    max-width: 300px;
+    height: 350px;
+    overflow: hidden;
+    padding: 1rem 1rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    transition: all 0.5s ease;
+
+    @media (min-width: 400px) {
+        flex-direction: column;
+        &:hover {
+            flex-direction: row;
+            &::before {
+                height: 60px;
+            }
+            &::after {
+                width: 60px;
+            }
+        }
+        &:hover &--left-side {
+            width: 50px;
+            margin: 0;
+        }
+        &:hover &--right-side {
+            width: 250px;
+            opacity: 1;
+            scale: 1;
+            height: 100%;
+        }
+        &:hover &--picture {
+            width: 40px;
+        }
+        &:hover &--rotate {
+            writing-mode: vertical-rl;
+            text-align: left;
+        }
+    }
+
+    &::before {
+        content: "";
+        height: 60px;
+        width: 1px;
+        background-color: var(--primary-color-yellow);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        transition: all 0.5s ease;
+        @media (min-width: 400px) {
+            height: 0;
+        }
+    }
+    &::after {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: var(--primary-color-yellow);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        transition: all 0.5s ease;
+        @media (min-width: 400px) {
+            width: 0;
+        }
+    }
+
+    &--left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50px;
+
+        @media (min-width: 400px) {
+            width: 100%;
+            margin: auto;
+        }
+    }
+    &--right-side {
+        width: 250px;
+        padding: 0 1rem;
+
+        transition: all 0.5s ease;
+
+        @media (min-width: 400px) {
+            opacity: 0;
+            height: 0;
+            scale: 0;
+            overflow: hidden;
+        }
+    }
+    &--picture {
+        border-radius: 50%;
+        width: 40px;
+
+        transition: all 0.5s ease;
+
+        @media (min-width: 400px) {
+            width: 80px;
+        }
+    }
+
+    &--rotate {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        flex-grow: 1;
+        margin: 1rem 0;
+
+        transition: all 0.5s ease;
+
+        @media (min-width: 400px) {
+            writing-mode: horizontal-tb;
+            text-align: center;
+        }
+    }
+
+    &--name {
+        color: var(--primary-color-yellow);
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    &--text {
+        color: var(--text-color-dark);
+        line-height: 1.4rem;
     }
 }

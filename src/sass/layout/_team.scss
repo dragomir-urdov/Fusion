@@ -1,4 +1,42 @@
 .team {
-    height: 100vh;
+    padding: 4 1rem;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--navigation-color);
+
+    @media (min-width: 750px) {
+        padding: 4rem;
+    }
+
+    &__name {
+        color: var(--primary-color-yellow);
+        text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
+        margin: 1.5rem;
+    }
+
+    &__title {
+        font-family: "Merriweather", serif;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 4rem;
+
+        @media (min-width: 750px) {
+            width: 75%;
+            font-size: 2.75rem;
+            line-height: 5rem;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        justify-content: center;
+        margin: 6rem auto 0;
+    }
 }

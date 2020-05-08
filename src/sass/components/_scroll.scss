@@ -6,7 +6,8 @@ html {
     .header,
     .service,
     .scroll,
-    .testimonials {
+    .testimonials,
+    .team {
         scroll-snap-align: start;
     }
     scrollbar-color: var(--background) black;
@@ -30,7 +31,7 @@ html {
     }
 
     &__fix {
-        height: 1vh;
+        height: 0vh;
         scroll-snap-align: end;
     }
 }
