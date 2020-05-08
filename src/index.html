@@ -13,17 +13,22 @@
             src="https://kit.fontawesome.com/6f0929a9d6.js"
             crossorigin="anonymous"
         ></script>
+
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header class="header">
             <div class="header__content">
                 <div class="header__wrapper">
+                    <span class="header__border--top"></span>
                     <h1 class="header__wrapper--heading">
                         We're
                         <span class="header__wrapper--heading--span">
                             Fusion</span
                         >, We Build Things for Human
                     </h1>
+                    <span class="header__border--bottom"></span>
                 </div>
                 <ul class="header__list">
                     <li class="header__list--item">DESIGN</li>
@@ -81,12 +86,24 @@
         </nav>
         <main id="main" class="main">
             <section class="service">
-                <div class="line">&nbsp;</div>
-                <p class="service__name">Our Services</p>
-                <h2 class="service__title">
+                <div class="line" data-aos="zoom-in" data-aos-duration="1000">
+                    &nbsp;
+                </div>
+                <p class="service__name" data-aos="zoom-in">
+                    Our Services
+                </p>
+                <h2
+                    class="service__title"
+                    data-aos="fade-down"
+                    data-aos-delay="200"
+                >
                     Our team will take your business presence to new level
                 </h2>
-                <div class="service__wrapper">
+                <div
+                    class="service__wrapper"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
                     <div class="service__card">
                         <i class="far fa-copy service__card--icon"></i>
                         <h1 class="service__card--title">Strategy.</h1>
@@ -136,13 +153,26 @@
                     </div>
                 </div>
             </section>
-            <section class="project scroll" focus>
+            <div class="scroll__fix"></div>
+            <section class="project scroll">
                 <div class="scroll__item">
                     <div class="project__one">
                         <div class="project__wrapper--left">
-                            <div class="line">&nbsp;</div>
-                            <p class="project__subtitle">Branding & Design</p>
-                            <h2 class="project__title">Project One</h2>
+                            <div class="line" data-aos="fade-down">&nbsp;</div>
+                            <p
+                                class="project__subtitle"
+                                data-aos="fade-down"
+                                data-aos-delay="400"
+                            >
+                                Branding & Design
+                            </p>
+                            <h2
+                                class="project__title"
+                                data-aos="fade-down"
+                                data-aos-delay="800"
+                            >
+                                Project One
+                            </h2>
                         </div>
                         <img
                             class="project__image"
@@ -150,19 +180,29 @@
                             alt="Project"
                         />
                         <div class="project__wrapper--right">
-                            <a href="#contact" class="project__detail">
+                            <a
+                                href="#contact"
+                                class="project__detail"
+                                data-aos="fade-up"
+                                data-aos-delay="800"
+                            >
                                 Project detail
                                 <span class="navigation__contact--array">
                                     &rarr;
                                 </span>
                             </a>
-                            <a href="#contact" class="project__view">
+                            <a
+                                href="#contact"
+                                class="project__view"
+                                data-aos="fade-up"
+                                data-aos-delay="400"
+                            >
                                 View Slides
                                 <span class="navigation__contact--array">
                                     &rarr;
                                 </span>
                             </a>
-                            <div class="line">&nbsp;</div>
+                            <div class="line" data-aos="fade-up">&nbsp;</div>
                         </div>
                     </div>
                 </div>
@@ -228,6 +268,40 @@
             <section class="testimonials"></section>
             <section class="team"></section>
             <section class="contact"></section>
+
+            <!-- SCROLL ANIMATION -->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    mirror: true,
+                    easing: "linear",
+                });
+            </script>
+
+            <!-- gsap
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+                integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M="
+                crossorigin="anonymous"
+            ></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+                integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg="
+                crossorigin="anonymous"
+            ></script>
+
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+                integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+                crossorigin="anonymous"
+            ></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+                integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+                crossorigin="anonymous"
+            ></script> -->
+
+            <script src="js/scroll.js"></script>
         </main>
     </body>
 </html>

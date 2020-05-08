@@ -18,9 +18,54 @@
         background-position: center;
     }
 
+    &__border {
+        &--top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            animation: border-width 1s ease-in backwards 0.5s;
+        }
+        &--bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            animation: border-width 1s ease-in backwards 0.5s;
+        }
+    }
+
     &__wrapper {
-        border: var(--border);
+        // border: var(--border);
         width: 70%;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            background-color: white;
+            animation: border-height 1s ease-in backwards 0.5s;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 2px;
+            background-color: white;
+            animation: border-height 1s ease-in backwards 0.5s;
+        }
 
         @media (min-width: 750px) {
             width: 60%;
@@ -36,6 +81,7 @@
             text-shadow: 0.5rem 0.5rem 1rem black;
 
             transition: all 0.5s ease;
+            animation: fade-in 2s ease-in backwards;
 
             @media (min-width: 750px) {
                 font-size: 3.5rem;
@@ -55,6 +101,8 @@
         font-family: "Open Sans", sans-serif;
         font-size: 0.8rem;
         text-shadow: 0.5rem 0.5rem 1rem black;
+
+        animation: fade-in-down 0.5s ease-in backwards 1.5s;
 
         &--item {
             @include button-background-hover;
@@ -76,7 +124,7 @@
         font-size: 1.2rem;
         color: var(--primary-color-yellow);
 
-        animation: header__arrow 2s linear infinite backwards;
+        animation: header__arrow 2s linear infinite backwards 2s;
         cursor: pointer;
     }
 
@@ -84,6 +132,8 @@
         position: absolute;
         bottom: 0;
         padding: 2rem;
+
+        animation: fade-in-up 0.5s ease-in backwards 2s;
 
         @media (max-width: 400px) {
             opacity: 0;
