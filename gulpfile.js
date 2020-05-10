@@ -6,13 +6,15 @@ const cssnano = require("gulp-cssnano");
 const autoprefixer = require("gulp-autoprefixer");
 
 function style() {
-    return gulp
-        .src("./src/sass/**/*.scss")
-        .pipe(sass().on("error", sass.logError))
-        .pipe(autoprefixer())
-        .pipe(cssnano())
-        .pipe(gulp.dest("./src/css"))
-        .pipe(browserSync.stream());
+    return (
+        gulp
+            .src("./src/sass/**/*.scss")
+            .pipe(sass().on("error", sass.logError))
+            .pipe(autoprefixer())
+            // .pipe(cssnano())
+            .pipe(gulp.dest("./src/css"))
+            .pipe(browserSync.stream())
+    );
 }
 
 function watch() {

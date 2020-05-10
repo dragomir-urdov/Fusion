@@ -6,7 +6,7 @@
     }
     padding: 2rem 0;
 
-    background-color: var(--navigation-color);
+    background-color: var(--primary-color-black);
 
     &--item {
         padding: 1rem;
@@ -77,7 +77,7 @@
             font-size: 1rem;
             text-transform: uppercase;
             padding: 1rem 2rem;
-            color: var(--navigation-color);
+            color: var(--primary-color-black);
 
             cursor: pointer;
         }

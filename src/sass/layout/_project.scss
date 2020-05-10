@@ -1,7 +1,4 @@
 .project {
-    // background-color: var(--navigation-color);
-    // padding: 3rem 0;
-
     &__one,
     &__two,
     &__three {
@@ -66,7 +63,6 @@
     }
 
     &__subtitle {
-        font-family: "Open Sans", sans-serif;
         color: var(--primary-color-yellow);
         text-transform: uppercase;
         margin: 1rem 0;
@@ -79,6 +75,8 @@
 
     &__detail,
     &__view {
+        @include button-background-hover;
+
         display: block;
         border: none;
         margin: 1rem 0;
@@ -86,7 +84,5 @@
         font-size: 0.9rem;
         font-weight: bold;
         cursor: pointer;
-
-        @include button-background-hover;
     }
 }

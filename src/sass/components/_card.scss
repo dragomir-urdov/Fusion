@@ -1,6 +1,5 @@
 .service__card {
     max-width: 15rem;
-    font-family: "Open Sans", sans-serif;
     letter-spacing: 0.1rem;
 
     &--icon {
@@ -40,9 +39,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--navigation-color);
+    background-color: var(--primary-color-black);
     padding: 0 2rem;
-    font-family: "Open Sans", sans-serif;
     overflow: hidden;
     scroll-snap-align: start;
     flex-shrink: 0;
@@ -101,7 +99,6 @@
 
     // display: flex;
     position: relative;
-    font-family: "Open Sans", sans-serif;
     font-size: 0.8rem;
     line-height: 1.3rem;
     transition: all 0.5s ease;

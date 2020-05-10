@@ -17,7 +17,7 @@ html {
 .scroll {
     height: 100vh;
     overflow-y: scroll;
-    scrollbar-color: var(--navigation-color) var(--navigation-color);
+    scrollbar-color: var(--primary-color-black) var(--primary-color-black);
 
     scroll-snap-type: y mandatory;
 
@@ -28,7 +28,7 @@ html {
         padding: 5rem 2rem;
         display: flex;
         justify-content: center;
-        background-color: var(--navigation-color);
+        background-color: var(--primary-color-black);
     }
 
     &__fix {
