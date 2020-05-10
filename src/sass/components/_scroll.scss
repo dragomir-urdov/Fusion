@@ -9,12 +9,18 @@ html {
         scroll-snap-align: start;
     }
     scrollbar-color: var(--background) black;
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
 }
 
 .scroll {
     height: 100vh;
     overflow-y: scroll;
     scrollbar-color: var(--primary-color-black) var(--primary-color-black);
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 
     scroll-snap-type: y mandatory;
 
