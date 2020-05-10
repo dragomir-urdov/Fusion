@@ -154,6 +154,8 @@ html {
   html .team,
   html .contact {
     scroll-snap-align: start; }
+  html::-webkit-scrollbar {
+    width: 0.5rem; }
 
 .scroll {
   height: 100vh;
@@ -161,6 +163,8 @@ html {
   scrollbar-color: var(--primary-color-black) var(--primary-color-black);
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory; }
+  .scroll::-webkit-scrollbar {
+    width: 0; }
   .scroll__item {
     scroll-snap-align: start;
     height: 100vh;
@@ -824,6 +828,8 @@ html {
       display: flex;
       -ms-scroll-snap-type: x mandatory;
           scroll-snap-type: x mandatory; }
+      .testimonials__wrapper--cards::-webkit-scrollbar {
+        width: 0; }
       @media (min-width: 700px) {
         .testimonials__wrapper--cards {
           width: 60vw;

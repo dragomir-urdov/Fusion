@@ -12,6 +12,10 @@ html {
         scroll-snap-align: start;
     }
     scrollbar-color: var(--background) black;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
 }
 
 .scroll {
@@ -20,6 +24,10 @@ html {
     scrollbar-color: var(--primary-color-black) var(--primary-color-black);
 
     scroll-snap-type: y mandatory;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 
     &__item {
         scroll-snap-align: start;
