@@ -4,11 +4,8 @@ html {
     overflow-y: scroll;
 
     .header,
-    .service,
-    .scroll,
-    .testimonials,
-    .team,
-    .contact {
+    .main,
+    .project {
         scroll-snap-align: start;
     }
     scrollbar-color: var(--background) black;
@@ -29,10 +26,5 @@ html {
         display: flex;
         justify-content: center;
         background-color: var(--primary-color-black);
-    }
-
-    &__fix {
-        height: 0vh;
-        scroll-snap-align: end;
     }
 }

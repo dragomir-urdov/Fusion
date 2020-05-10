@@ -92,10 +92,10 @@
 
 .team__card {
     max-width: 300px;
-    height: 350px;
+    height: 330px;
     overflow: hidden;
     padding: 1rem 1rem 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--primary-color-black);
 
     // display: flex;
     position: relative;
