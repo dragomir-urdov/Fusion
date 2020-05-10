@@ -12,11 +12,13 @@
     }
 
     &__wrapper {
-        width: 100%;
-        max-width: 1200px;
+        width: min-content;
+        max-width: 90vw;
         display: grid;
+        gap: 1px;
         grid-template-columns: repeat(auto-fill, 300px);
         justify-content: center;
         margin: 6rem auto 0;
+        background-color: var(--background);
     }
 }

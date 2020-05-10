@@ -261,7 +261,7 @@ html {
   height: 350px;
   overflow: hidden;
   padding: 1rem 1rem 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--primary-color-black);
   position: relative;
   font-size: 0.8rem;
   line-height: 1.3rem;
@@ -858,12 +858,16 @@ html {
     .team {
       padding: 4rem; } }
   .team__wrapper {
-    width: 100%;
-    max-width: 1200px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    max-width: 90vw;
     display: grid;
+    gap: 1px;
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
-    margin: 6rem auto 0; }
+    margin: 6rem auto 0;
+    background-color: var(--background); }
 
 .contact {
   background: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url(../img/background.jpg);
