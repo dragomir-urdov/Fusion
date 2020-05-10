@@ -90,6 +90,9 @@
                 height: 0.25rem;
                 margin: 0 1rem;
                 width: 15%;
+                background-color: var(--text-color-light);
+            }
+            .active {
                 background-color: var(--primary-color-yellow);
             }
         }

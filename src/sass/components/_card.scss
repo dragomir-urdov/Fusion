@@ -99,40 +99,33 @@
     padding: 1rem 1rem 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
 
-    display: flex;
+    // display: flex;
     position: relative;
     font-family: "Open Sans", sans-serif;
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     transition: all 0.5s ease;
 
     @media (min-width: 400px) {
-        flex-direction: column;
         &:hover {
-            flex-direction: row;
             &::before {
-                height: 60px;
+                height: 70px;
             }
             &::after {
-                width: 60px;
+                width: 70px;
             }
         }
-        &:hover &--left-side {
-            width: 50px;
-            margin: 0;
-        }
+
         &:hover &--right-side {
-            width: 250px;
+            transform: translateY(0);
             opacity: 1;
-            scale: 1;
-            height: 100%;
         }
         &:hover &--picture {
-            width: 40px;
+            width: 50px;
+            transform: translate(-125px, -150px);
         }
         &:hover &--rotate {
-            writing-mode: vertical-rl;
-            text-align: left;
+            transform: rotate(90deg) translate(-120px, 175px);
         }
     }
 
@@ -177,40 +170,49 @@
         }
     }
     &--right-side {
-        width: 250px;
-        padding: 0 1rem;
+        width: 220px;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
 
         transition: all 0.5s ease;
 
         @media (min-width: 400px) {
+            transform: translateY(150px);
             opacity: 0;
-            height: 0;
-            scale: 0;
-            overflow: hidden;
         }
     }
     &--picture {
         border-radius: 50%;
-        width: 40px;
+        width: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-125px, -150px);
 
         transition: all 0.5s ease;
 
         @media (min-width: 400px) {
-            width: 80px;
+            width: 100px;
+            transform: translate(-50%, -50%);
         }
     }
 
     &--rotate {
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
         flex-grow: 1;
         margin: 1rem 0;
+
+        position: absolute;
+        top: 70%;
+        left: 50%;
+
+        transform: rotate(90deg) translate(-120px, 175px);
 
         transition: all 0.5s ease;
 
         @media (min-width: 400px) {
-            writing-mode: horizontal-tb;
-            text-align: center;
+            transform: rotate(0) translate(-50%, -50%);
         }
     }
 

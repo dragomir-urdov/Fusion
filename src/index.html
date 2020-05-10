@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__content">
                 <div class="header__wrapper">
                     <span class="header__border--top"></span>
@@ -40,7 +40,7 @@
                 </a>
             </div>
             <nav class="navigation header__navigation">
-                <a href="#">
+                <a href="#header">
                     <img
                         src="img/logo.png"
                         alt="Logo"
@@ -54,7 +54,7 @@
             </nav>
         </header>
         <nav class="navigation navigation__sticky">
-            <a href="#">
+            <a href="#header">
                 <img src="img/logo.png" alt="Logo" class="navigation__logo" />
             </a>
             <!-- checkbox -->
@@ -65,17 +65,17 @@
             <div class="navigation__menu">
                 <ul class="navigation__list">
                     <li class="navigation__list--item">
-                        <a href="#">SERVICES</a>
+                        <a href="#service">SERVICES</a>
                     </li>
                     <li class="navigation__list--item">
-                        <a href="#">PORTFOLIO</a>
+                        <a href="#project">PORTFOLIO</a>
                     </li>
                     <li class="navigation__list--item">
-                        <a href="#">TESTIMONIALS</a>
+                        <a href="#testimonials">TESTIMONIALS</a>
                     </li>
-                    <li class="navigation__list--item"><a href="#">TEAM</a></li>
+                    <li class="navigation__list--item"><a href="#team">TEAM</a></li>
                     <li class="navigation__list--item">
-                        <a href="#">CONTACT US</a>
+                        <a href="#contact">CONTACT US</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +85,7 @@
             </a>
         </nav>
         <main id="main" class="main">
-            <section class="service">
+            <section class="service" id="service">
                 <div class="line" data-aos="zoom-in" data-aos-duration="1000">
                     &nbsp;
                 </div>
@@ -154,7 +154,7 @@
                 </div>
             </section>
             <div class="scroll__fix"></div>
-            <section class="project scroll">
+            <section class="project scroll" id="project">
                 <div class="scroll__item">
                     <div class="project__one">
                         <div class="project__wrapper--left">
@@ -210,7 +210,7 @@
                     <div class="project__two">
                         <div class="project__wrapper--left">
                             <div class="line">&nbsp;</div>
-                            <p class="project__subtitle">Branding & Design</p>
+                            <p class="project__subtitle" >Branding & Design</p>
                             <h2 class="project__title">Project Two</h2>
                         </div>
                         <img
@@ -265,7 +265,7 @@
                     </div>
                 </div>
             </section>
-            <section class="testimonials">
+            <section class="testimonials" id="testimonials">
                 <div class="line" data-aos="zoom-in" data-aos-duration="1000">
                     &nbsp;
                 </div>
@@ -279,7 +279,7 @@
                 >
                     We have worked with some amazing companies around the world
                 </h2>
-                <ul class="testimonials__list">
+                <ul class="testimonials__list" data-aos="fade-up" data-aos-delay="100">
                     <li class="testimonials__list--item">
                         <img
                             src="img/testimonials/1.png"
@@ -331,7 +331,7 @@
                     </li>
                 </ul>
 
-                <div class="testimonials__wrapper">
+                <div class="testimonials__wrapper" data-aos="fade-up" data-aos-delay="100">
                     <div class="testimonials__wrapper--cards">
                         <div class="testimonials__card">
                             <img
@@ -398,7 +398,7 @@
                         </div>
                     </div>
                     <div class="testimonials__wrapper--position">
-                        <span class="position">&nbsp;</span>
+                        <span class="position active">&nbsp;</span>
                         <span class="position">&nbsp;</span>
                         <span class="position">&nbsp;</span>
                     </div>
@@ -406,7 +406,7 @@
             </section>
             <div class="scroll__fix"></div>
 
-            <section class="team">
+            <section class="team" id="team">
                 <div class="line" data-aos="zoom-in" data-aos-duration="1000">
                     &nbsp;
                 </div>
@@ -421,7 +421,7 @@
                     Our Amazing Team
                 </h2>
                 <div class="team__wrapper">
-                    <div class="team__card">
+                    <div class="team__card" data-aos="fade-up">
                         <div class="team__card--left-side">
                             <img
                                 src="img/testimonials/profile.jpg"
@@ -449,7 +449,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="team__card">
+                    <div class="team__card" data-aos="fade-up" data-aos-delay="100">
                         <div class="team__card--left-side">
                             <img
                                 src="img/testimonials/profile.jpg"
@@ -477,7 +477,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="team__card">
+                    <div class="team__card" data-aos="fade-up" data-aos-delay="200">
                         <div class="team__card--left-side">
                             <img
                                 src="img/testimonials/profile.jpg"
@@ -505,7 +505,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="team__card">
+                    <div class="team__card" data-aos="fade-up" data-aos-delay="300">
                         <div class="team__card--left-side">
                             <img
                                 src="img/testimonials/profile.jpg"
@@ -533,7 +533,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="team__card">
+                    <div class="team__card" data-aos="fade-up">
                         <div class="team__card--left-side">
                             <img
                                 src="img/testimonials/profile.jpg"
@@ -561,7 +561,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="team__card">
+                    <div class="team__card" data-aos="fade-up" data-aos-delay="100">
                         <div class="team__card--left-side">
                             <img
                                 src="img/testimonials/profile.jpg"
@@ -589,7 +589,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="team__card">
+                    <div class="team__card" data-aos="fade-up" data-aos-delay="200">
                         <div class="team__card--left-side">
                             <img
                                 src="img/testimonials/profile.jpg"
@@ -617,7 +617,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="team__card">
+                    <div class="team__card" data-aos="fade-up" data-aos-delay="300">
                         <div class="team__card--left-side">
                             <img
                                 src="img/testimonials/profile.jpg"
@@ -649,7 +649,7 @@
             </section>
             <div class="scroll__fix"></div>
 
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="line" data-aos="zoom-in" data-aos-duration="1000">
                     &nbsp;
                 </div>
@@ -663,6 +663,108 @@
                 >
                     Let's talk about the project
                 </h2>
+                <form action="#" class="contact__form" data-aos="fade-up" data-aos-delay="100">
+                    <ul class="contact__list">
+                        <li class="contact__list--item">
+                            <input
+                                type="text"
+                                id="name"
+                                class="contact__list--input"
+                                placeholder="YOUR NAME"
+                            />
+                            <label for="name" class="contact__list--label">
+                                Your Name
+                            </label>
+                        </li>
+                        <li class="contact__list--item">
+                            <input
+                                type="email"
+                                id="email"
+                                class="contact__list--input"
+                                placeholder="YOUR EMAIL"
+                            />
+                            <label for="email" class="contact__list--label">
+                                Your Email
+                            </label>
+                        </li>
+                        <li class="contact__list--item">
+                            <input
+                                type="text"
+                                id="company"
+                                class="contact__list--input"
+                                placeholder="COMPANY"
+                            />
+                            <label for="company" class="contact__list--label">
+                                Company
+                            </label>
+                        </li>
+                        <li class="contact__list--item">
+                            <input
+                                type="text"
+                                id="subject"
+                                class="contact__list--input"
+                                placeholder="SUBJECT"
+                            />
+                            <label for="subject" class="contact__list--label">
+                                Subject
+                            </label>
+                        </li>
+                        <li class="contact__list--item contact__list--message">
+                            <textarea
+                                name="message"
+                                id="message"
+                                placeholder="MESSAGE"
+                            ></textarea>
+                            <label for="message" class="contact__list--label">
+                                Message
+                            </label>
+                        </li>
+                        <li class="contact__list--item contact__list--submit">
+                            <button type="submit">
+                                Get in touch &rarr;
+                            </button>
+                        </li>
+                    </ul>
+                </form>
+                <footer class="footer">
+                    <img src="img/logo.png" alt="Logo" />
+                    <div class="office">
+                        <h3 class="office__title">California office</h3>
+                        <div class="office__info">
+                            <p class="office__address">
+                                4243 Woodland Terrace Sacramento, CA 95814
+                            </p>
+                            <p class="office__phone">
+                                9167532645
+                            </p>
+                        </div>
+                    </div>
+                    <div class="office">
+                        <div class="office__info">
+                            <h3 class="office__title">New York office</h3>
+                            <p class="office__address">
+                                4243 Woodland Terrace Sacramento, CA 95814
+                            </p>
+                            <p class="office__phone">
+                                9167532645
+                            </p>
+                        </div>
+                    </div>
+                        <div class="office">
+                            <h3 class="office__title">Other contact</h3>
+
+                            <p class="office__mail">
+                                jobs@templateocean.com
+                            </p>
+                            <div class="office__links">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter-square"></i>
+                                <i class="fab fa-pinterest"></i>
+                                <i class="fab fa-instagram-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </section>
             <div class="scroll__fix"></div>
 

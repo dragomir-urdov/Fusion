@@ -7,7 +7,8 @@ html {
     .service,
     .scroll,
     .testimonials,
-    .team {
+    .team,
+    .contact {
         scroll-snap-align: start;
     }
     scrollbar-color: var(--background) black;
