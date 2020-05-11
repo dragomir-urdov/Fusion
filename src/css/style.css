@@ -823,6 +823,8 @@ html {
       display: flex;
       -ms-scroll-snap-type: x mandatory;
           scroll-snap-type: x mandatory; }
+      .testimonials__wrapper--cards::-webkit-scrollbar {
+        width: 0; }
       @media (min-width: 700px) {
         .testimonials__wrapper--cards {
           width: 60vw;
