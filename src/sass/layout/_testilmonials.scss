@@ -53,6 +53,10 @@
 
             scrollbar-color: var(--primary-color-black)
                 var(--primary-color-black);
+without-scroll-snap
+            &::-webkit-scrollbar {
+                width: 0;
+            }
 
             overflow-x: scroll;
             display: flex;
